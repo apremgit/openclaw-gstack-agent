@@ -1,0 +1,132 @@
+{
+    "cognitivecomputations/dolphin-mistral-24b-venice-edition:free": {
+        "wins": 0,
+        "total_runs": 2,
+        "last_reasoning": ""
+    },
+    "google/gemma-4-26b-a4b-it:free": {
+        "wins": 0,
+        "total_runs": 2,
+        "last_reasoning": "",
+        "tokens_per_sec": 29.81
+    },
+    "google/gemma-4-31b-it:free": {
+        "wins": 0,
+        "total_runs": 2,
+        "last_reasoning": "",
+        "tokens_per_sec": 45.87
+    },
+    "liquid/lfm-2.5-1.2b-instruct:free": {
+        "wins": 0,
+        "total_runs": 2,
+        "last_reasoning": "",
+        "tokens_per_sec": 115.22
+    },
+    "liquid/lfm-2.5-1.2b-thinking:free": {
+        "wins": 0,
+        "total_runs": 2,
+        "last_reasoning": "",
+        "tokens_per_sec": 84.98
+    },
+    "meta-llama/llama-3.2-3b-instruct:free": {
+        "wins": 0,
+        "total_runs": 2,
+        "last_reasoning": ""
+    },
+    "meta-llama/llama-3.3-70b-instruct:free": {
+        "wins": 0,
+        "total_runs": 2,
+        "last_reasoning": ""
+    },
+    "nex-agi/nex-n2-pro:free": {
+        "wins": 0,
+        "total_runs": 2,
+        "last_reasoning": "",
+        "tokens_per_sec": 82.54
+    },
+    "nousresearch/hermes-3-llama-3.1-405b:free": {
+        "wins": 0,
+        "total_runs": 2,
+        "last_reasoning": ""
+    },
+    "nvidia/nemotron-3-nano-30b-a3b:free": {
+        "wins": 0,
+        "total_runs": 2,
+        "last_reasoning": "",
+        "tokens_per_sec": 197.64
+    },
+    "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free": {
+        "wins": 0,
+        "total_runs": 2,
+        "last_reasoning": "",
+        "tokens_per_sec": 211.52
+    },
+    "nvidia/nemotron-3-super-120b-a12b:free": {
+        "wins": 0,
+        "total_runs": 2,
+        "last_reasoning": "",
+        "tokens_per_sec": 30.76
+    },
+    "nvidia/nemotron-3-ultra-550b-a55b:free": {
+        "wins": 0,
+        "total_runs": 2,
+        "last_reasoning": ""
+    },
+    "nvidia/nemotron-3.5-content-safety:free": {
+        "wins": 0,
+        "total_runs": 2,
+        "last_reasoning": "",
+        "tokens_per_sec": 56.62
+    },
+    "nvidia/nemotron-nano-12b-v2-vl:free": {
+        "wins": 0,
+        "total_runs": 2,
+        "last_reasoning": "",
+        "tokens_per_sec": 49.77
+    },
+    "nvidia/nemotron-nano-9b-v2:free": {
+        "wins": 0,
+        "total_runs": 2,
+        "last_reasoning": "",
+        "tokens_per_sec": 40.16
+    },
+    "openai/gpt-oss-120b:free": {
+        "wins": 2,
+        "total_runs": 2,
+        "last_reasoning": "The `openai/gpt-oss-120b:free` model provides the most robust, well-structured, and feature-rich solution for the task, demonstrating superior code quality and depth. Its key strengths include:\n\n1.  **Robust Parallelism**: It correctly implements `concurrent.futures.ThreadPoolExecutor` to parallelize the fetching of access keys for multiple IAM users, significantly speeding up the process for accounts with many users. This is a critical optimization for performance.\n2.  **Comprehensive Error Handling and Retries**: The script integrates `botocore.config.Config` for automatic exponential back-off retries on AWS API calls, ensuring resilience against transient network issues or throttling. It also includes explicit `try-except` blocks for `ClientError` and `BotoCoreError`.\n3.  **Strict Permission Validation**: A unique and highly valuable feature is the upfront `validate_permissions` check, which verifies that the executing principal has the necessary IAM permissions (`iam:ListUsers`, `iam:ListAccessKeys`) before commencing the potentially time-consuming inventory. This enhances robustness and user experience.\n4.  **Accurate Timezone-Aware Date Handling**: It correctly handles `datetime` objects with explicit UTC timezone awareness for all comparisons and formatting (`isoformat`, `days_old` helpers), eliminating common errors associated with naive datetimes.\n5.  **Flexible Output and Logging**: The script provides a clear, CSV-formatted report (to stdout or a specified file) and offers an optional, robust S3 upload feature for long-term storage or integration with other systems. It separates informational messages to `stderr` from data output to `stdout`, which is excellent for scripting and automation.\n6.  **High Code Quality**: The code is highly modular, well-commented, uses type hints, and adheres to best practices, making it readable, maintainable, and extensible. It includes sensible default values and comprehensive CLI arguments for customization of age threshold, worker count, output path, S3 bucket, and AWS profile.\n7.  **Completeness**: It addresses all aspects of the prompt comprehensively, from inventorying to identifying active keys older than the threshold, with detailed output and clear instructions on prerequisites and usage.\n\nWhile other models like `nvidia/nemotron-3-super-120b-a12b:free` and `nex-agi/nex-n2-pro:free` also provide strong, correctly implemented parallel solutions with good code quality, `openai/gpt-oss-120b:free` surpasses them with its additional layers of robustness (permission validation, S3 upload) and overall architectural polish, making it the most optimized and production-ready choice.",
+        "tokens_per_sec": 29.2
+    },
+    "openai/gpt-oss-20b:free": {
+        "wins": 0,
+        "total_runs": 2,
+        "last_reasoning": "",
+        "tokens_per_sec": 68.45
+    },
+    "openrouter/free": {
+        "wins": 0,
+        "total_runs": 1,
+        "last_reasoning": ""
+    },
+    "poolside/laguna-m.1:free": {
+        "wins": 0,
+        "total_runs": 2,
+        "last_reasoning": "",
+        "tokens_per_sec": 43.81
+    },
+    "poolside/laguna-xs.2:free": {
+        "wins": 0,
+        "total_runs": 2,
+        "last_reasoning": "",
+        "tokens_per_sec": 50.0
+    },
+    "qwen/qwen3-coder:free": {
+        "wins": 0,
+        "total_runs": 2,
+        "last_reasoning": ""
+    },
+    "qwen/qwen3-next-80b-a3b-instruct:free": {
+        "wins": 0,
+        "total_runs": 2,
+        "last_reasoning": ""
+    }
+}
