@@ -1,3 +1,5 @@
+from dotenv import load_dotenv
+load_dotenv()  # Safely injects your hidden keys into os.environ automatically
 import os
 import sys
 import requests
